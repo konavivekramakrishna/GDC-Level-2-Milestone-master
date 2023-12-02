@@ -97,7 +97,7 @@ $ python tasks.py report # Statistics"""
             self.write_completed()
 
             self.write_current()
-            print("Marked item as done")
+            print("Marked item as done.")
 
         else:
             print(
@@ -110,7 +110,7 @@ $ python tasks.py report # Statistics"""
 
             del self.current_items[priorityToDelete]
             self.write_current()
-            print(f"Item with priority {priorityToDelete} deleted.")
+            print(f"Deleted item with priority {priorityToDelete}")
 
         except KeyError:
             print(
@@ -137,7 +137,7 @@ $ python tasks.py report # Statistics"""
                 index += 1
         print("")
 
-        print(f"Completed {len(self.completed_items)}")
+        print(f"Completed : {len(self.completed_items)}")
 
         index = 1
         for i in self.completed_items:
